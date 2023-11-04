@@ -1,10 +1,10 @@
 # Welcome to the NextJS TypeScript + ESLint + Prettier + Husky + Chakra UI + Tailwind CSS Setup!
 
-[![Husky](https://img.shields.io/badge/Husky-v8.0.0-green)](https://github.com/typicode/husky)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v3.2.4-blue)](https://tailwindcss.com/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-v4.9.3-blue)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-v14.0.1-blue)](https://nextjs.org/)
 [![Chakra UI](https://img.shields.io/badge/Chakra_UI-v2.4.1-blue)](https://chakra-ui.com/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v3.2.4-blue)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-v4.9.3-blue)](https://www.typescriptlang.org/)
+[![Husky](https://img.shields.io/badge/Husky-v8.0.0-green)](https://github.com/typicode/husky)
 
 ## About
 
