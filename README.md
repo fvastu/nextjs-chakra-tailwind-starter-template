@@ -10,21 +10,7 @@
 
 Are you looking to kickstart your web development journey with Next.js and TypeScript? Look no further! The nextjs-typescript-chakra-starter is here to make your life easier.
 
-## Key Features
-
 ### 🚀 Supercharge Your Development
-
-This Next.js template is loaded with essential tools to supercharge your development process. Whether you're building a personal project or a business application, we've got you covered.
-
-### 🔍 Strong Type-Checking
-
-We've integrated TypeScript to enhance your coding experience. Enjoy the benefits of strict type-checking, helping you catch errors early in your development journey.
-
-### 📜 Google Style Guide Enforcement
-
-Consistency is key! This template enforces the Google style guide, ensuring your code follows best practices.
-
-### 🧰 Tooling Galore
 
 We've included a bunch of powerful tools to boost your productivity:
 
