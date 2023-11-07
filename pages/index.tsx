@@ -1,6 +1,6 @@
 import { Box, Button, Container, Heading, Stack, Text } from "@chakra-ui/react";
-
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
+import { ThemeChanger } from "./theme-changer";
  
 type Payload = {
   message: string
@@ -20,11 +20,12 @@ export default function Home({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <Container maxW={"3xl"}>
+      <ThemeChanger display={"flex"} alignItems={"center"} justifyContent={"center"} marginTop={10} />
       <Stack
         as={Box}
         textAlign={"center"}
-        spacing={{ base: 6, md: 12 }}
-        py={{ base: 10, md: 36 }}
+        spacing={6}
+        py={{ base: 10, md: 20 }}
       >
         <Heading
           fontWeight={600}
