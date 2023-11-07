@@ -34,6 +34,53 @@ To get started with this project, you can follow these steps:
 3. ⚙️ Install dependencies: `npm install`
 4. 🚀 Run the development server: `npm run dev`
 
+## Theming
+
+Chakra UI is a versatile and customizable library for building user interfaces with ease. One of its standout features is theming, which allows you to tailor the look and feel of your application to suit your brand or style. This section will walk you through how theming works in Chakra UI and provide an example of changing the theme.
+
+## Setting Up Chakra UI Theming
+
+Chakra UI makes it easy to define and apply custom themes to your application. To get started, follow these steps:
+
+1. **Create a Custom Theme**: In your project, create a custom theme file. You can use the `extendTheme` function to extend the default Chakra UI theme and add your custom styles and tokens. In your project, it might look something like this:
+
+```javascript
+import { extendTheme } from "@chakra-ui/react";
+import { mode, StyleFunctionProps } from "@chakra-ui/theme-tools";
+
+const customTheme = extendTheme({
+  // Your custom theme configuration
+  // ...
+});
+
+export default customTheme;
+```
+
+2. **Pass the theme to the provider**: After located the ChakraProvider, just provide the custom theme as prop:
+   
+```javascript
+function MyApp({ Component, pageProps }: { Component: React.ComponentType; pageProps: Record<string, unknown> }) {
+  return (
+    <ChakraProvider theme={customTheme}>
+      <Component {...pageProps} />
+    </ChakraProvider>
+  );
+}
+```
+
+3. **Toggle the change** You can simply change the theme using the function *toggleColorMode* from the useColorMode hook
+
+```javascript
+export function ThemeChanger() {
+  const { colorMode, toggleColorMode } = useColorMode()
+  return (
+      <Button rounded="full" onClick={toggleColorMode}>
+        Change to Theme {colorMode === 'light' ? 'Dark' : 'Light'}
+      </Button>
+  )
+}
+```
+
 ## Usage
 
 You can customize and extend this starter template to build your web application. It includes a set of scripts to help with development, testing, and deployment. Some of the key scripts from the `package.json` include:
